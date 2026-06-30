@@ -52,8 +52,7 @@ export default function ProductDetail() {
       navigate('/login');
       return;
     }
-    await addToCart(product._id, quantity);
-    navigate('/checkout');
+    navigate(`/customise/${product._id}`, { state: { product, quantity } });
   };
 
   const handleReviewSubmit = async (e) => {
