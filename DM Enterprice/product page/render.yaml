@@ -3,7 +3,7 @@ services:
   - type: web
     name: dm-enterprice-api
     runtime: node
-    rootDir: server
+    rootDir: DM Enterprice/product page/server
     buildCommand: npm install
     startCommand: node server.js
     envVars:
@@ -42,7 +42,7 @@ services:
   - type: web
     name: dm-enterprice-client
     runtime: static
-    rootDir: client
+    rootDir: DM Enterprice/product page/client
     buildCommand: npm install && npm run build
     staticPublishPath: dist
     envVars:
